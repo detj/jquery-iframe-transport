@@ -12,9 +12,9 @@
     }).done(function(data) {
       $.each(data.files, function(idx, file) {
         $("<li><b></b> (<span class='size'></span>, <span class='mime'></span>)</li>")
-          .find("b").text(file.filename).end()
-          .find(".size").text(formatSize(file.length)).end()
-          .find(".mime").text(file.mime).end()
+          .find("b").text(file.name).end()
+          .find(".size").text(formatSize(file.size)).end()
+          .find(".mime").text(file.type).end()
           .appendTo("#filelist");
       });
       form.find(":file").val("");

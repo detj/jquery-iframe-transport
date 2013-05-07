@@ -11,8 +11,8 @@ http.createServer(function(req, res) {
       files.push(file);
     });
     form.on("end", function() {
-      res.writeHead(200, {"Content-Type": "application/json"});
-      res.end(JSON.stringify({files: files}));
+      res.writeHead(200, {"Content-Type": "text/html"});
+      res.end('<textarea data-type="application/json" data-status="200" data-statusText="OK">' + JSON.stringify({files: files}) + '</textarea>');
     });
     form.parse(req);
   } else if (req.url == "/jquery.iframe-transport.js") {

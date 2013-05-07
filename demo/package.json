@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "description": "jQuery iframe transport demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cmlenz/jquery-iframe-transport.git"
+  },
+  "dependencies": {
+    "formidable": "~1.0.14",
+    "paperboy": "0.0.5"
+  },
+  "keywords": [
+    "upload",
+    "ajax"
+  ],
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README"
+}
